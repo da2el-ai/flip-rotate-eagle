@@ -1,0 +1,16 @@
+{
+    "id": "84fe820d-a5f3-4ae4-b6d5-e40da1278904",
+    "version": "1.0.0",
+    "platform": "all",
+    "arch": "all",
+    "name": "FlipRotate",
+    "logo": "/logo.png",
+    "keywords": ["convert", "image", "format"],
+    "devTools": false,
+    "main": {
+        "frame": true,
+        "url": "index.html",
+        "width": 640,
+        "height": 480
+    }
+}

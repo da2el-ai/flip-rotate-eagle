@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/plugin.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="button-row">
+            <button class="action-button el-button el-button--primary" data-action="flip-horizontal">
+                <div class="button-icon">↔️</div>
+                <div class="button-label">左右反転</div>
+            </button>
+            <button class="action-button" data-action="flip-vertical">
+                <div class="button-icon">↕️</div>
+                <div class="button-label">上下反転</div>
+            </button>
+        </div>
+        
+        <div class="button-row">
+            <button class="action-button" data-action="rotate-90">
+                <div class="button-icon">↻</div>
+                <div class="button-label">90度回転</div>
+            </button>
+            <button class="action-button" data-action="rotate-180">
+                <div class="button-icon">⟲</div>
+                <div class="button-label">180度回転</div>
+            </button>
+            <button class="action-button" data-action="rotate-270">
+                <div class="button-icon">↺</div>
+                <div class="button-label">270度回転</div>
+            </button>
+        </div>
+        
+        <div class="settings-row">
+            <div class="setting-group">
+                <label class="setting-label">
+                    <input type="radio" name="save-mode" value="overwrite" id="overwrite-radio">
+                    既存の画像を上書きする
+                </label>
+                <label class="setting-label">
+                    <input type="radio" name="save-mode" value="new" id="new-radio" checked>
+                    新規に画像を登録する
+                </label>
+            </div>
+        </div>
+        <div class="settings-row" id="format-row">
+            <div class="setting-group">
+                <label class="setting-label">フォーマット</label>
+                <select id="format-select">
+                    <option value="webp">WEBP</option>
+                    <option value="png">PNG</option>
+                    <option value="jpeg">JPEG</option>
+                    <option value="bmp">BMP</option>
+                </select>
+            </div>
+            <div class="setting-group quality-group" id="quality-group">
+                <label class="setting-label">品質</label>
+                <select id="quality-select">
+                    <option value="0.6">低 (60%)</option>
+                    <option value="0.8">中 (80%)</option>
+                    <option value="0.9" selected>高 (90%)</option>
+                    <option value="0.95">最高 (95%)</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
